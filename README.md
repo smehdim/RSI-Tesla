@@ -1,2 +1,2 @@
 # RSI-Tesla
-python code to suggest trades based on RSI on Tesla stocks
+This repository contains a Python script that downloads Tesla stock data for the past year at 1-hour intervals using the yfinance library. The script then calculates the Relative Strength Index (RSI) for the data. Based on the RSI value, the script automates trading decisions: if the RSI falls below 30 and we are not currently in a trade, we buy stocks; if the RSI rises above 50, we sell the bought stock. The script also generates a log of all completed trades. Shorter data intervals could not be retrieved from yfinance, so a 1-hour interval was chosen.
